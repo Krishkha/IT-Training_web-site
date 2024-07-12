@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body   input::-webkit-outer-spin-button,
+body input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+body input[type=number] {
+-moz-appearance: textfield;
+}
+
+body input:focus{
+  outline: none;
+}
+
+  .navbar {
+    background-color: #063455;
+    height: 60px;
+    font-size: 15px;
+  }
+
+.navbar .container a h3{
+  font-weight: 800;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+  .navbar .container .navbar-brand {
+    color: white;
+  }
+  
+  .form .form-control {
+    width: 400px;
+  }
+  .collapse ul {
+    color: white;
+  }
+  .collapse ul .lign {
+    background-color: white;
+    width: 2px;
+    height: 40px;
+  }
+  
+  .collapse ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .collapse .user {
+    font-size: 30px;
+    color: white;
+  }
+  
+  /* ---------------------------------------------------------------
+  Mininav
+  --------------------------------------------------------------- */
+  .mininav {
+    height: 30px;
+    background-color: white;
+  }
+  .mininav .container ul {
+    gap: 10px;
+  }
+  ul li {
+    font-size: 12px;
+    background-color: transparent;
+  }
+  
+
+
+  @media screen and (max-width:1200px) {
+    .mininav{
+      display: none;
+    }
+  }
+  @media screen and (max-width:991px) {
+    .collapsed{
+      background-color: #063455;
+      display: flex;
+      flex-direction: column
+    }
+  }

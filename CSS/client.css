@@ -1,0 +1,217 @@
+body   input::-webkit-outer-spin-button,
+body input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+body input[type=number] {
+-moz-appearance: textfield;
+}
+
+body input:focus{
+  outline: none;
+}
+
+
+.banner{
+    width: 100%;
+    height: auto;
+}
+.client-info{
+    height: 70px;
+}
+.client-info .info{
+    /* border: 2px solid black; */
+    height: 130px;
+    width: 250px;
+    border-top: 7px solid black;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgb(71, 71, 71);
+}
+
+
+.section1{
+    height: 800px;
+}
+.section1 .companys{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+}
+.section1 .companys .company-logo{
+    /* border: 2px solid black; */
+    width: 75%;
+    height: 80%;
+}
+.section1 .companys .company-logo img{
+    /* border: 2px solid black; */
+    width: 120px;
+    height: auto;
+}
+.section1 .companys .form{
+    /* border: 2px solid black; */
+    width: 20%;
+    height: 69%;
+}
+.section1 .companys .form form button{
+    width: 90%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(45deg, #F48631, #FB6D45);
+    border: 0;
+    border-radius: 5px;
+}
+
+
+.section3 .video{
+    width: 60%;
+    height: 200px;
+    background-image: url(/IMG/client_online-videos.jpg);
+    background-size: cover;
+    /* background-color: black; */
+}
+
+
+.section3 .part2{
+    width: 100%;
+    height: auto;
+    /* border: 2px solid black; */
+    background-image: url(/IMG/orange_dot_left.png  );
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 25%;
+  }
+  
+  .section3 .part2 .feedback{
+    width: auto;
+    height: auto;
+  }
+  .section3 .part2 .feedback .boxes{
+    width: 400px;
+    height: 300px;
+    /* border: 2px solid black; */
+    border-radius: 5%;
+    box-shadow: 0 0 17px 2px #faca468f;
+  }
+  
+  .section4{
+        padding: 80px 0;
+        background: #023864;
+        clip-path: polygon(0% 57px, 100% 0%, 100% 100%, 0% 100%);
+  }
+  
+  .section4 .clients-dec h4{
+        font-weight: 700;
+        color: white;
+  }
+
+  .section4 .clients-dec span{
+        color: #F48631;
+  }
+
+  .section4 .client-form form input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    color: white;
+  }
+  .section4 .client-form form input::placeholder{
+    color: white;
+  }
+  .section4 .client-form form button{
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+  }
+  .section4 .client-form form button:hover{
+    color: #023864;
+    background-color: white;
+    font-weight: 700;
+  }
+
+
+/* ------------------------------------------------------------------------
+Responsive Design Code
+------------------------------------------------------------------------ */
+
+@media only screen and (max-width:1300px) {
+  .section1 .companys .company-logo {
+    overflow-x: auto;
+  }
+
+  .section1 .companys .company-logo{
+    /* border: 2px solid black; */
+    width: 60%;
+    height: 80%;
+}
+.section1 .companys .form{
+    /* border: 2px solid black; */
+    width: 40%;
+    height: 69%;
+}
+  .section3 .part1{
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+  }
+  html{
+    font-size: 100%;
+  }
+
+}
+
+
+@media only screen and (max-width:800px) {
+  .client-info .info h3{
+    font-size: 24px;
+  }
+  .client-info .info p{
+    font-size: 12px;
+  }
+}
+
+  @media only screen and (max-width:700px) {
+  .section1 .companys{
+    flex-flow: column;
+  }
+  .section1 .companys .company-logo{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: auto;
+}
+.section1 .companys .form{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: auto;
+  }
+
+  .client-info .info{
+    width: 130px;
+    height: 100px;
+  }
+
+}
+
+@media only screen and (max-width:600px) {
+  .client-info .info h3{
+    font-size: 19px;
+  }
+  .client-info .info p{
+    font-size: 10px;
+  }
+  
+  .section3 .part2 .feedback .boxes{
+    width: 100%;
+    margin: 0 ;
+  }
+
+  .section3 .part2 .feedback .boxes:nth-child(1){
+    display: none;
+  }
+}

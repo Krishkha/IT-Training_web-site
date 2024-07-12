@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/allcourses.css" />
+    <link rel="stylesheet" href="/CSS/navbar.css" />
+    <link rel="stylesheet" href="/CSS/footer.css" />
+  </head>
+  <body>
+    <!-- ----------------------------------------
+    Navbar
+    ---------------------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">ReCoding</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse collapsed navbar-collapse justify-content-start gy-xl-5"
+          id="navbarSupportedContent"
+        >
+          <button type="button" class="btn btn-outline-light mx-3 my-3">
+            <i class="bi bi-grid-3x3-gap mx-2"></i>Course Menu
+          </button>
+          <form class="d-flex form">
+            <input
+              class="form-control me-0 rounded-0"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button type="button" class="btn btn-warning rounded-0">
+              <i class="bi bi-search" style="color: white"></i>
+            </button>
+          </form>
+
+          <ul class="navbar nav align-items-cente mx-5 gap-3 bg-transparent">
+            <li><a href="/Components/home/allcourse.html">All Courses</a></li>
+            <div class="lign align-self-center"></div>
+            <li><a href="/Components/home/corporatetraining.html">Corporate Training</a></li>
+          </ul>
+          <div class="user"><a href="/Components/home/login.html" style="color: white;"><i class="bi bi-person-circle"></i></a></div>
+        </div>
+      </div>
+    </nav>
+    <section class="mininav container-fluid">
+      <div class="container">
+        <ul
+          class="mini d-flex list-unstyled justify-content-center align-items-center"
+        >
+          <li class=""><i class="fa-solid fa-money-bill"></i> Fee Deposit</li>
+          <li class="">
+            <i class="fa-solid fa-arrows-to-circle"></i> Request Zon
+          </li>
+          <li><i class="bi bi-star-half"></i> Reviews</li>
+          <li><i class="fa-solid fa-blog"></i> Blogs</li>
+          <li><i class="fa-regular fa-newspaper"></i> Press Release</li>
+          <li>
+            <i class="far fa-pen-to-square fa-fw"></i> Training Certificate
+          </li>
+          <li><i class="fa-solid fa-location-dot"></i> Contact Us</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------
+    Main
+    ---------------------------------------- -->
+    <main>
+      <div
+        class="allcoursebanner container-fluid d-flex align-items-center px-5"
+      >
+        <div class="bannerinfo m-5">
+          <h1 style="font-weight: 700">Our Course Basket</h1>
+          <p style="font-weight: 300;">
+            Establish yourself as a renowned professional in the IT industry by
+            learning through best industry practitioners across India and get a
+            program certificate too as a valid proof of your skills.
+          </p>
+          <div class="place d-flex gap-5">
+            <button
+              type="button"
+              class="btn btn-warning showbtn"
+              style="font-weight: 700;background-color: #fa872a; color: white;"
+            >
+              PLACEMENT REPORT
+            </button>
+
+            <div class="popupbox">
+              <div class="form-box d-flex">
+                  <div class="hidebox"><i class="bi bi-x-lg"></i></div>
+                  <div class="img w-50">
+                      <img src="https://www.cromacampus.com/public/img/enrollnow.png" alt="">
+                  </div>
+                  <div class="form-info py-4 d-flex justify-content-start align-items-center flex-column">
+                      <h3 style="font-weight: 700; font-size: 25px;color: orange;"><i class="bi bi-file-earmark-arrow-down-fill"></i>Placement Report</h3>
+      
+                      <form action="">
+                          <input type="text" placeholder="Enter Name">
+                          <input type="email" placeholder="Enter Email">
+                          <div class="contrynumber d-flex justify-content-center align-items-center" style="border-bottom: 2px solid orange;height: 52px;">
+                              <select name="" id="" class="border-0 bg-transparent m-0 p-0" style="color: black; height: 20px;" >
+                                <option value="india">+91(IND)</option>
+                                <option value="india">+93(AFG)</option>
+                                <option value="india">+86(CHN)</option>
+                                <option value="india">+61(AUS)</option>
+                                <option value="india">+81(JPN)</option>
+                              </select>
+                              <input type="number" class="numberinput border-0" name="" id="" placeholder="Enter Phone">
+                            </div>
+                          <input type="text" placeholder="Search Course">
+      
+                          <button type="button" class="subbtn my-4 rounded-3">Download Placement</button>
+                          <p style="font-size: 12px;color: black;">By registering here, I agree to Croma Campus <span class="text-primary"">Terms & Conditions</span> and <span class="text-primary">Privacy Policy</span></p>
+                      </form>
+                  </div>
+              </div>
+          </div>
+            <div class="video d-flex gap-3">
+              <div class="circle">
+                <i class="bi bi-play-fill"></i>
+              </div>
+              <div class="text">
+                <h3 style="font-weight: 300px; font-size: 20px">
+                  Watch <br />
+                  <span style="font-weight: 700; font-size: 20px"
+                    >INTRO VIDEO</span
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container container-fluid">
+        <div
+          class="location d-flex justify-content-between align-items-center p-5 "
+        >
+          <div class="path">
+            <p style="font-weight: 300; font-size: 18px">Home > All Courses</p>
+          </div>
+          <div class="searchbar">
+            <div
+              class="search d-flex justify-content-center align-content-center"
+            >
+              <input type="search" placeholder="Enter Category" value="" />
+              <div
+                class="icon d-flex justify-content-center align-items-center rounded-1"
+              >
+                <i class="bi bi-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cources container-lg p-2 d-flex gap-5">
+          <div class="subjects p-2 gap-2">
+            <h5 style="font-weight: 400">All Categories</h5>
+            <div class="subjectname d-flex justify-content-center align-items-center flex-column gap-2" >
+              <button type="button" class="btn text-start">Amazon Web Services</button>
+              <button type="button" class="btn text-start">Blockchain</button>
+              <button type="button" class="btn text-start">Cloud Computing</button>
+              <button type="button" class="btn text-start">Cyber Security</button>
+              <button type="button" class="btn text-start">Database</button>
+              <button type="button" class="btn text-start">Frontend Developer</button>
+              <button type="button" class="btn text-start">Full Stack Developer</button>
+              <button type="button" class="btn text-start">Java Programming</button>
+              <button type="button" class="btn text-start">Mobile Developer</button>
+              <button type="button" class="btn text-start">Software Testing</button>
+              <button type="button" class="btn text-start">Digital Marketing</button>
+            </div>
+            <div class="quaryform my-3 gap-3  d-flex flex-column justify-content-start align-items-start">
+              <div class="heading text-center">
+                <h5 style="font-weight: 800;">Drop Your Quary</h5>
+              </div>
+              <form class="p-2">
+                <input type="text" name="" placeholder="Enter Name " id="">
+                <input type="email" name="" placeholder="Enter Email " id="">
+                <div class="contrynumber d-flex">
+                  <select name="" id="" class="border-0">
+                    <option value="india">+91(IND)</option>
+                    <option value="india">+93(AFG)</option>
+                    <option value="india">+86(CHN)</option>
+                    <option value="india">+61(AUS)</option>
+                    <option value="india">+81(JPN)</option>
+                  </select>
+                  <input type="number" class="border-0" name="" id="">
+                </div>
+                <input type="text" name="" placeholder="Search Course" id="">
+                <textarea name="" placeholder="Enter Remarks" id=""></textarea>
+
+                <button class="rounded-5 border-0">Submit</button>
+
+                <p style="font-size: 12px;">By registering here, I agree to Croma Campus Terms & Conditions and Privacy Policy</p>
+              </form>
+            </div>
+          </div>
+          <div class="subjectinfo">
+            <div class="heading ">
+              <h4 style="font-size: 20px; font-weight: 700;">AMAZON WEB SERVICES</h4>
+              <div class="line" style="width: 100px; height: 4px;background: linear-gradient(to right,#ff6e51,#ffe259);"></div>
+            </div>
+            
+            <div class="cards-box ">
+
+              <!-- card 1 start -->
+              <div class="card p-2 d-flex flex-row justify-content-between align-items-center gap-2">
+                <div class="item1 d-flex justify-content-center align-items-center">
+                  <div class="logo d-flex justify-content-center align-items-center">
+                    <i class="bi bi-amazon" style="font-size: 70px;color:rgb(202, 124, 22);"></i>
+                  </div>
+                </div>
+                <div class="item2 d-flex justify-content-start flex-column">
+                  <div class="txt gap-0">
+                    <h5 style="font-size: 17px;font-weight: 700;">AWS Certification Program</h5>
+                    <div class="rating d-flex gap-1" style="font-size: 13px;color: rgb(255, 140, 0);">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <p style="font-size: 12px;color: black;">4.5 out of 5 base on 1384 Vote</p>
+                    </div>
+                  </div>
+                  <ul style="font-size: 12px;">
+                    <li>Live Online /Self-Paced/Classroom</li>
+                    <li>Certificate Pass Guaranteed</li>
+                    <li>100% Job Assignment</li>
+                  </ul>
+                </div>
+                <div class="item3 gap-2">
+                  <button type="button" class="btn px-5">View More</button>
+                  <ul class="list-unstyled my-2">
+                    <li><i class="bi bi-book-half"></i><span class="px-2">30 Hours Of Learning</span></li>
+                    <li><i class="bi bi-calendar-plus"></i><span class="px-2"> 3 Assignment</span></li>
+                    <li><i class="bi bi-camera-video"></i><span class="px-2">3 Live Projects</span></li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+
+              <!-- card 2 start -->
+              <div class="card p-2 d-flex flex-row justify-content-between align-items-center gap-2">
+                <div class="item1 d-flex justify-content-center align-items-center">
+                  <div class="logo d-flex justify-content-center align-items-center">
+                    <i class="bi bi-amazon" style="font-size: 70px;color:rgb(202, 124, 22);"></i>
+                  </div>
+                </div>
+                <div class="item2 d-flex justify-content-center flex-column">
+                  <div class="txt gap-0">
+                    <h5 style="font-size: 17px;font-weight: 700;">AWS Certified Cloud Practitioner</h5>
+                    <div class="rating d-flex flex-wrap gap-1" style="font-size: 13px;color: rgb(255, 140, 0);">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <p style="font-size: 12px;color: black;">4.5 out of 5 base on 1384 Vote</p>
+                    </div>
+                  </div>
+                  <ul style="font-size: 12px;">
+                    <li>Live Online /Self-Paced/Classroom</li>
+                    <li>Certificate Pass Guaranteed</li>
+                    <li>100% Job Assignment</li>
+                  </ul>
+                </div>
+                <div class="item3 gap-2">
+                  <button type="button" class="btn px-5">View More</button>
+                  <ul class="list-unstyled my-2">
+                    <li><i class="bi bi-book-half"></i><span class="px-2">30 Hours Of Learning</span></li>
+                    <li><i class="bi bi-calendar-plus"></i><span class="px-2"> 3 Assignment</span></li>
+                    <li><i class="bi bi-camera-video"></i><span class="px-2">3 Live Projects</span></li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <!-- card 3 start -->
+              <div class="card p-2 d-flex flex-row justify-content-between align-items-center gap-2">
+                <div class="item1 d-flex justify-content-center align-items-center">
+                  <div class="logo d-flex justify-content-center align-items-center">
+                    <i class="bi bi-amazon" style="font-size: 70px;color:rgb(202, 124, 22);"></i>
+                  </div>
+                </div>
+                <div class="item2 d-flex justify-content-center flex-column">
+                  <div class="txt gap-0">
+                    <h5 style="font-size: 17px;font-weight: 700;">AWS Certified Solutions Architect – Associate</h5>
+                    <div class="rating d-flex gap-1" style="font-size: 13px;color: rgb(255, 140, 0);">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <p style="font-size: 12px;color: black;">4.5 out of 5 base on 1384 Vote</p>
+                    </div>
+                  </div>
+                  <ul style="font-size: 12px;">
+                    <li>Live Online /Self-Paced/Classroom</li>
+                    <li>Certificate Pass Guaranteed</li>
+                    <li>100% Job Assignment</li>
+                  </ul>
+                </div>
+                <div class="item3 gap-2">
+                  <button type="button" class="btn px-5">View More</button>
+                  <ul class="list-unstyled my-2">
+                    <li><i class="bi bi-book-half"></i><span class="px-2">30 Hours Of Learning</span></li>
+                    <li><i class="bi bi-calendar-plus"></i><span class="px-2"> 3 Assignment</span></li>
+                    <li><i class="bi bi-camera-video"></i><span class="px-2">3 Live Projects</span></li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <!-- card 4 start -->
+              <div class="card p-2 d-flex flex-row justify-content-between align-items-center gap-2">
+                <div class="item1 d-flex justify-content-center align-items-center">
+                  <div class="logo d-flex justify-content-center align-items-center">
+                    <i class="bi bi-amazon" style="font-size: 70px;color:rgb(202, 124, 22);"></i>
+                  </div>
+                </div>
+                <div class="item2 d-flex justify-content-center flex-column">
+                  <div class="txt gap-0">
+                    <h5 style="font-size: 17px;font-weight: 700;">AWS Solutions Architect - Professional </h5>
+                    <div class="rating d-flex gap-1" style="font-size: 13px;color: rgb(255, 140, 0);">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <p style="font-size: 12px;color: black;">4.5 out of 5 base on 1384 Vote</p>
+                    </div>
+                  </div>
+                  <ul style="font-size: 12px;">
+                    <li>Live Online /Self-Paced/Classroom</li>
+                    <li>Certificate Pass Guaranteed</li>
+                    <li>100% Job Assignment</li>
+                  </ul>
+                </div>
+                <div class="item3 gap-2">
+                  <button type="button" class="btn px-5">View More</button>
+                  <ul class="list-unstyled my-2">
+                    <li><i class="bi bi-book-half"></i><span class="px-2">30 Hours Of Learning</span></li>
+                    <li><i class="bi bi-calendar-plus"></i><span class="px-2"> 3 Assignment</span></li>
+                    <li><i class="bi bi-camera-video"></i><span class="px-2">3 Live Projects</span></li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <!-- card 5 start -->
+              <div class="card p-2 d-flex flex-row justify-content-between align-items-center gap-2">
+                <div class="item1 d-flex justify-content-center align-items-center">
+                  <div class="logo d-flex justify-content-center align-items-center">
+                    <i class="bi bi-amazon" style="font-size: 70px;color:rgb(202, 124, 22);"></i>
+                  </div>
+                </div>
+                <div class="item2 d-flex justify-content-center flex-column">
+                  <div class="txt gap-0">
+                    <h5 style="font-size: 17px;font-weight: 700;">AWS Certified SysOps Administrator - Associate</h5>
+                    <div class="rating d-flex gap-1" style="font-size: 13px;color: rgb(255, 140, 0);">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <p style="font-size: 12px;color: black;">4.5 out of 5 base on 1384 Vote</p>
+                    </div>
+                  </div>
+                  <ul style="font-size: 12px;">
+                    <li>Live Online /Self-Paced/Classroom</li>
+                    <li>Certificate Pass Guaranteed</li>
+                    <li>100% Job Assignment</li>
+                  </ul>
+                </div>
+                <div class="item3 gap-2">
+                  <button type="button" class="btn px-5">View More</button>
+                  <ul class="list-unstyled my-2">
+                    <li><i class="bi bi-book-half"></i><span class="px-2">30 Hours Of Learning</span></li>
+                    <li><i class="bi bi-calendar-plus"></i><span class="px-2"> 3 Assignment</span></li>
+                    <li><i class="bi bi-camera-video"></i><span class="px-2">3 Live Projects</span></li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <!-- card 6 start -->
+              <div class="card p-2 d-flex flex-row justify-content-between align-items-center gap-2">
+                <div class="item1 d-flex justify-content-center align-items-center">
+                  <div class="logo d-flex justify-content-center align-items-center">
+                    <i class="bi bi-amazon" style="font-size: 70px;color:rgb(202, 124, 22);"></i>
+                  </div>
+                </div>
+                <div class="item2 d-flex justify-content-center flex-column">
+                  <div class="txt gap-0">
+                    <h5 style="font-size: 17px;font-weight: 700;">AWS Certified Developer - Associate</h5>
+                    <div class="rating d-flex gap-1" style="font-size: 13px;color: rgb(255, 140, 0);">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                      <p style="font-size: 12px;color: black;">4.5 out of 5 base on 1384 Vote</p>
+                    </div>
+                  </div>
+                  <ul style="font-size: 12px;">
+                    <li>Live Online /Self-Paced/Classroom</li>
+                    <li>Certificate Pass Guaranteed</li>
+                    <li>100% Job Assignment</li>
+                  </ul>
+                </div>
+                <div class="item3 gap-2">
+                  <button type="button" class="btn px-5">View More</button>
+                  <ul class="list-unstyled my-2">
+                    <li><i class="bi bi-book-half"></i><span class="px-2">30 Hours Of Learning</span></li>
+                    <li><i class="bi bi-calendar-plus"></i><span class="px-2"> 3 Assignment</span></li>
+                    <li><i class="bi bi-camera-video"></i><span class="px-2">3 Live Projects</span></li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ----------------------------------------
+    Footer
+    ---------------------------------------- -->
+
+    <footer>
+      <div
+        class="footer1 container-fluid w-100 h-auto d-flex justify-content-start align-items-start flex-wrap p-5"
+      >
+        <ul class="list-group list-unstyled gap-3">
+          <strong>TRANDING CERTIFICATE COURSES</strong>
+          <div class="list">
+            <li>Cloud Computing Certification Course</li>
+            <li>AWS Certification Training</li>
+            <li>DevOps Certification Training</li>
+            <li>Microsoft Azure Certification Training</li>
+            <li>Salesforce Certification Training</li>
+            <li>Data Science Certification Course</li>
+            <li>Data Analysis Certification Training</li>
+            <li>Full Stack Development Training</li>
+            <li>Software Testing Training</li>
+            <li>Blockchain Certification Training</li>
+            <li>Python Certification Course</li>
+          </div>
+        </ul>
+        <ul class="list-group list-unstyled gap-3">
+          <div class="line"></div>
+          <strong>TRANDING MASTER COURSES</strong>
+          <div class="list">
+            <li>Professional in Data Analytics with PowerBI</li>
+            <li>Professional in Data Analytics with Tableau</li>
+            <li>Master Program in Cloud Computing</li>
+            <li>Master in DevOps Engineering</li>
+            <li>Master in Software Testing</li>
+            <li>Masters in Artificial Intelligence</li>
+            <li>Masters in Data Analytics</li>
+            <li>Masters in Data Science Program</li>
+            <li>Masters in Full Stack Development Training</li>
+            <li>Masters in Generative AI</li>
+          </div>
+        </ul>
+        <ul class="list-group list-unstyled gap-3">
+          <div class="line"></div>
+          <strong>COMPANY</strong>
+          <div class="list">
+            <li>About Us</li>
+            <li>Reviews</li>
+            <li>Contect Us</li>
+            <li>Blog</li>
+            <li>Web Stories</li>
+            <li>Webinars</li>
+            <li>Our Team</li>
+            <li>FAQ's</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Press Release</li>
+          </div>
+        </ul>
+        <ul class="list-group list-unstyled gap-3">
+          <div class="line"></div>
+          <strong>WORK WITH US</strong>
+          <div class="list">
+            <li>Service</li>
+            <li>Placement</li>
+            <li>Career</li>
+            <li>Our Client</li>
+            <li>Corporate Training</li>
+            <li>Become a Instructor</li>
+            <li>Hire From Recoding</li>
+            <li>Join us</li>
+            <li>Brochure</li>
+            <li>Refund</li>
+            <li>Shipping & Delivery Policy</li>
+          </div>
+        </ul>
+      </div>
+      <div
+        class="footer2 container-fluid w-100 h-auto d-flex justify-content-center align-items-start flex-wrap gap-5 p-5"
+      >
+        <div class="socialmedia w-auto h-auto">
+          <strong>FOLLOW US</strong>
+          <div class="logo">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-pinterest"></i>
+          </div>
+        </div>
+        <div class="input">
+          <strong>FOR NEWSLETTER</strong>
+          <div
+            class="email d-flex justify-content-center align-items-center my-2"
+          >
+            <input
+              type="email"
+              class="border-0 px-2 py-1"
+              placeholder="Enter Email"
+            />
+            <button type="button" class="border-0">
+              <i class="bi bi-send-fill"></i>
+            </button>
+          </div>
+        </div>
+        <div class="input">
+          <strong>FOR Notification</strong>
+          <div
+            class="number d-flex justify-content-center align-items-center my-2"
+          >
+            <input
+              type="number"
+              class="border-0 px-2 py-1"
+              placeholder="Enter number"
+            />
+            <button type="button" class="border-0">
+              <i class="bi bi-send-fill"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pyment">
+          <strong>WE ACCESS ONLINE PAYMENTS</strong>
+          <div class="logo d-flex gap-2 my-2">
+            <div class="onlinepy">
+              <img
+                src="/IMG/logo/phonepe_logo.png"
+                width="30px"
+                height="30px"
+                alt=""
+              />
+            </div>
+            <div class="onlinepy">
+              <img
+                src="/IMG/logo/google_pay_logo.png"
+                width="30px"
+                height="30px"
+                alt=""
+              />
+            </div>
+            <div class="onlinepy">
+              <img
+                src="/IMG/logo/paytm_logo.png"
+                width="auto"
+                height="20px"
+                alt=""
+              />
+            </div>
+            <div class="onlinepy">
+              <img
+                src="./IMG/logo/visa_logo.png"
+                width="auto"
+                height="20px"
+                alt=""
+              />
+            </div>
+            <div class="onlinepy">
+              <img
+                src="/IMG/logo/amarican_paya_logopng.png"
+                width="40px"
+                height="30px"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="foote2 container-fluid">
+        <p class="text-center" style="color: white; font-size: 10px">
+          Copyrignt 2008-2024 Recoding Campus(p) Ltd. All right Reservd
+        </p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="/js/formpopup.js"></script>
+  <script src="../../js/script.js"></script>
+  <script src="../../js/jquery-3.4.1.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/owl.carousel.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</html>

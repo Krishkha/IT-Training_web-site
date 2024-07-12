@@ -1,0 +1,57 @@
+
+/* ----------------------------------------
+    Footer
+    ---------------------------------------- */
+    footer{
+        background-color: #1B1D29;
+      }
+      footer .footer1 {
+        gap: 8%;
+        justify-content: flex-start !important;
+        flex-wrap: wrap;
+        height: auto !important;
+      }
+      footer .footer1 ul{
+        color: white;
+      }
+      footer .footer1 ul strong{
+        border-bottom: 4px solid #ff9901;
+        font-weight: 400;
+      }
+      footer .footer1 ul li{
+        font-size: 12px;
+      }
+      
+      footer .footer2{
+        background-color: #292C3D;
+        color: white;
+        flex-wrap: wrap;
+      }
+      footer .footer2 strong{
+        border-bottom: 3px solid white;
+      }
+      
+      footer .footer2 .socialmedia .logo{
+        gap: 10px;
+      }
+      footer .footer2 .socialmedia .logo i{
+        font-size: 25px;
+        padding: 5px 5px 0 0;
+      }
+      
+      footer .footer2 .input input{
+        border-radius: 5px;
+        font-size: 12px;
+      }
+      footer .footer2 .input .email,.number{
+        background-color: white;
+        border-radius: 5px 0px 0px 5px ;
+      }
+      footer .footer2 .input button{
+        background-color: #ff9901;
+        width: 28px;
+        height: 28px;
+        text-align: center;
+        border-radius: 7px;
+        position: relative;left: 5px;
+      }

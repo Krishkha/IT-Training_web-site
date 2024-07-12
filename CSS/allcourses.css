@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  scroll-behavior: smooth;
+  height: auto;
+  width: auto;
+
+}
+body   input::-webkit-outer-spin-button,
+body input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Firefox */
+body input[type=number] {
+-moz-appearance: textfield;
+}
+
+body inpu,textarea:focus{
+  outline: none;
+}
+
+main{
+  margin-bottom: 10%;
+}
+main .allcoursebanner {
+  height: 400px;
+  width: 100%;
+  background-image: url(/IMG/All_Course_Page_Banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.allcoursebanner .bannerinfo {
+  width: 90%;
+}
+.allcoursebanner .bannerinfo p {
+  width: 50%;
+}
+
+.popupbox{
+  display: none;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.popupbox .form-box .hidebox{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 0 0 0 15px;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  position: fixed;
+  right: 0;
+}
+
+.form-box{
+  width: 700px;
+  height: 500px;
+  background-color: white;
+  position: fixed;
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
+  top: 50%;
+  left: 50%;
+  animation-name: formani;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+} 
+@keyframes formani{
+  from{
+      transform: translate(-50%,-60%);
+  }
+  to{
+      transform: translate(-50%,-50%);
+      
+  }
+
+} 
+.form-box .form-info form input, .contrynumber{
+  width: 90%;
+  padding: 7px;
+  margin-top: 12px;
+  border: 0;
+  border-bottom: 2px solid orange;
+}   
+.form-box .form-info form input::placeholder{
+  color: black;
+}   
+.form-box .form-info form .subbtn{
+  width: 90%;
+  height: 40px;
+  border: 0;
+  color: white;
+  font-weight: 700;
+  background: linear-gradient(90deg, #f2b627, #fd904f);
+  box-shadow: 0px 0px 5px 0px rgba(59, 59, 59, 0.771);
+} 
+.place .circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: grid;
+  place-content: center;
+  animation: grow 1.5s infinite;
+}
+
+.place .circle > i {
+  color: black;
+  font-size: 30px;
+}
+
+@keyframes grow {
+  from {
+    box-shadow: 0px 0px 0em #000;
+  }
+  to {
+    box-shadow: 0px 0px 50px #000;
+  }
+}
+
+.container .location .searchbar .search input {
+  width: 300px;
+  border-radius: 5px 0 0 5px;
+  padding: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px 0px rgba(88, 88, 88, 0.589);
+}
+.container .location .searchbar .search .icon {
+  width: 30px;
+  height: 30px;
+  background-color: orange;
+}
+.container .location .searchbar .search .icon i {
+  font-size: 20px;
+  color: white;
+}
+
+
+
+.container .cources {
+    /* border: 2px solid black; */
+  }
+  .container .cources .subjects {
+    box-shadow: 0px 0px 5px 0px rgba(88, 88, 88, 0.589);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+  }
+  .container .cources .subjects .subjectname {
+    /* border: 2px solid black; */
+    width: 100%;
+  }
+  .container .cources .subjects .subjectname .btn {
+    border: 1px solid orange;
+    width: 90%;
+    border-radius: 0;
+  }
+  .container .cources .subjects .subjectname .btn:hover {
+    background: #ffe259; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #ff6251,
+      #ffe259
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #ff6e51,
+      #ffe259
+    ); 
+    color: white;
+    transition: 0.5s;
+  }
+  .container .cources .subjects .quaryform{
+    /* border: 2px solid black; */
+    width: 90%;
+    height: auto;
+    box-shadow: 0px 0px 5px 0px rgba(41, 41, 41, 0.559);
+  }
+  
+  .container .cources .subjects .quaryform .heading{
+    background-color: #F8981D;
+    color: white;
+    width: 100%;
+  }
+  .container .cources .subjects .quaryform form input,textarea{
+    border: 0;
+    border-bottom: 2px solid #F8981D;
+    width: 90%;
+    padding: 5px;
+    margin-top: 15px;
+  }
+  .container .cources .subjects .quaryform form .contrynumber{
+    border: 0;
+    border-bottom: 2px solid #F8981D;
+    width: 90%;
+    padding: 5px;
+  }
+  .container .cources .subjects .quaryform form button{
+    width: 90%;
+    padding: 5px;
+    background: linear-gradient(
+      to right,
+      #ff6e51,
+      #ffe259
+    ); 
+    color: white;
+    transition: 0.5s;
+  }
+
+  .container .cources .subjectinfo{
+    width: 70%;
+    height: auto;
+  }
+  .container .cources .subjectinfo .cards-box{
+    width: 100%;
+    height: auto;
+    /* border: 2px solid black; */
+  }
+  .container .cources .subjectinfo .cards-box .card{
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    border: 0;
+    /* border: 2px solid black; */
+  }
+  .container .cources .subjectinfo .cards-box .card .item1{
+    width: 120px;
+    height: 130px;
+    /* border: 2px solid black; */
+    background: linear-gradient(45deg, #3abdb7, #c8f199);
+  }
+  
+  .container .cources .subjectinfo .cards-box .card .item1 .logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .container .cources .subjectinfo .cards-box .card .item2{
+    width: 55%;
+  }
+  .container .cources .subjectinfo .cards-box .card .item3 .btn{
+    background-color: #ff9451;
+    font-size: 15px;
+  }
+
+
+  /* --------------------------------------------------
+  Responsive code
+  -------------------------------------------------- */
+@media only screen and (max-width:1000px) {
+  main .container{
+    width: 100%;
+  }
+
+  .container .cources .subjectinfo .cards-box .card{
+   flex-flow: row wrap;
+  }
+  .container .cources .subjectinfo .cards-box .card .item1{
+    width: 100%;
+    height: 100%;
+  }
+  .container .cources .subjectinfo .cards-box .card .item2{
+    width: 100%;
+  }
+  .container .cources .subjectinfo .cards-box .card .item3{
+    width: 100%;
+  }
+  .container .cources .subjectinfo .cards-box .card .item2 .txt h5{
+   font-size: 1rem;
+  }
+
+  
+  .container .cources .subjectinfo .cards-box .card .item3 .btn{
+    width: 100%;
+  }
+}
+@media only screen and (max-width:900px) {
+  .container .cources .subjects{
+    display: none;
+  }
+  .container .cources{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
+@media only screen and (max-width:840px) {
+  .allcoursebanner .bannerinfo .place .popupbox{
+    top: 0;
+    left: 0;
+  }
+  .allcoursebanner .bannerinfo .place .popupbox .form-box .img{
+    display: none;
+  }
+  .allcoursebanner .bannerinfo .place .popupbox .form-box{
+    width: 500px;
+    height: auto;
+
+  }
+  .allcoursebanner .bannerinfo .place .popupbox .form-box .form-info form{
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width:700px) {
+  .allcoursebanner .bannerinfo{
+    width:auto;
+  }
+  .allcoursebanner .bannerinfo .place{
+    width:auto;
+    flex-wrap: wrap;
+  }
+  .allcoursebanner .bannerinfo .place .btn{
+    width: 100%;
+  }
+  .allcoursebanner .bannerinfo p{
+    width: 100%;
+  }
+
+  .container .location{
+    flex-wrap: wrap;
+  }
+
+  
+
+}
+
